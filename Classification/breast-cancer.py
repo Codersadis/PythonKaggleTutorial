@@ -8,10 +8,10 @@ Author: cmjia
 import pandas as pd
 
 # read training data
-df_train = pd.read_csv('./Datasets/breast-cancer/breast-cancer-train.csv')
+df_train = pd.read_csv('../../Datasets/breast-cancer/breast-cancer-train.csv')
 
 # read test data
-df_test = pd.read_csv('./Datasets/breast-cancer/breast-cancer-test.csv')
+df_test = pd.read_csv('../../Datasets/breast-cancer/breast-cancer-test.csv')
 
 # feature collection & sampling data
 df_test_negative = df_test.loc[df_test['Type']==0][['Clump Thickness', 'Cell Size']]
